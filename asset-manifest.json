@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/frontendparham/where-in-the-world/static/css/main.0b35caff.css",
+    "main.js": "/frontendparham/where-in-the-world/static/js/main.7692bd70.js",
+    "index.html": "/frontendparham/where-in-the-world/index.html",
+    "main.0b35caff.css.map": "/frontendparham/where-in-the-world/static/css/main.0b35caff.css.map",
+    "main.7692bd70.js.map": "/frontendparham/where-in-the-world/static/js/main.7692bd70.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b35caff.css",
+    "static/js/main.7692bd70.js"
+  ]
+}
