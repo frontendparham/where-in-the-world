@@ -1,0 +1,124 @@
+// Base setup
+$color-primary: #262626;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+  background-color: $color-primary;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Main styles
+.container {
+  gap: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: min(90%, 30rem);
+}
+
+.box {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+}
+
+.box::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  transition: opacity 500ms;
+  background: radial-gradient(
+    60rem circle at 0 0,
+    rgba(255, 255, 255, 0.6),
+    transparent 20%
+  );
+  position: absolute;
+}
+
+.box::after {
+  background: radial-gradient(
+    60rem circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.6),
+    transparent 20%
+  );
+}
+
+.box::after {
+  z-index: 1;
+}
+
+.box-content {
+  background-color: $color-primary;
+  position: absolute;
+  z-index: 2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.box-content {
+  inset: 0.3rem;
+}
+
+.box:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+// Ignore this part
+.creator {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: #fff;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+
+  &__heading {
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__social {
+    svg {
+      width: 3rem;
+      height: 3rem;
+      fill: #fff;
+    }
+  }
+}
+
+.logo-box {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+
+  img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
