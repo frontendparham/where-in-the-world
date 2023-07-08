@@ -31,7 +31,7 @@ Users will be able to:
 
 ### Links
 
-- Live on: [Netlify](https://todayilearned-parham.netlify.app/)
+- Live on: [Github Pages](https://frontendparham.github.io/where-in-the-world/)
 
 ## My process
 
