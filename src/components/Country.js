@@ -4,7 +4,7 @@ export default function Country({ country }) {
       <img
         className="country__img"
         src={country.flags.svg}
-        alt={country.flags.alt}
+        alt={country.name.common}
       />
       <div className="country__content">
         <h2>{country.name.common}</h2>
