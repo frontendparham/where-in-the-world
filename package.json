@@ -2,7 +2,7 @@
   "name": "where-in-the-world",
   "version": "0.1.0",
   "homepage": "https://github.com/frontendparham/where-in-the-world",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@phosphor-icons/react": "^2.0.10",
     "@testing-library/jest-dom": "^5.16.5",
