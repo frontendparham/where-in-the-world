@@ -2,6 +2,10 @@
   position: relative;
   width: 40rem;
 
+  @include respond(phone) {
+    width: 30rem;
+  }
+
   &__input {
     padding-left: 4rem;
     padding-right: 0.8rem;
