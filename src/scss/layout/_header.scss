@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 2rem 5rem;
+
+  @include themed() {
+    background-color: t($t_color-bg-1);
+    box-shadow: t($t_box-shadow);
+  }
+
+  &__logo {
+    h1 {
+      font-weight: 600;
+      font-size: 2rem;
+    }
+  }
+
+  &__toggle-dark-mode {
+    button {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      span {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

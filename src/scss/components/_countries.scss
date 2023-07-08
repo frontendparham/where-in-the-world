@@ -1,0 +1,42 @@
+.countries {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 7rem;
+  flex-wrap: wrap;
+}
+
+.country {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  overflow: hidden;
+  border-radius: 0.3rem;
+
+  @include themed() {
+    background-color: t($t_color-bg-1);
+    box-shadow: t($t_box-shadow);
+  }
+
+  &__img {
+    width: 30rem;
+    height: 17rem;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: 2rem;
+    padding-bottom: 3rem;
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}

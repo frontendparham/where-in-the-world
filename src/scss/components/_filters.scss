@@ -1,0 +1,14 @@
+.filters {
+  position: relative;
+  width: 20rem;
+
+  &__select {
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+    width: 100%;
+  }
+
+  option {
+    padding: 2rem 0 !important;
+  }
+}

@@ -1,0 +1,45 @@
+// Theme Keys -> Variables
+$t_color-text-primary: "color-text-primary";
+$t_default-font-size: "default-font-size";
+$t_color-primary: "color-primary";
+$t_color-bg-1: "color-bg-1";
+$t_color-bg-2: "color-bg-2";
+$t_border: "border";
+$t_box-shadow: "box-shadow";
+
+$themes: (
+  light: (
+    // Text Colors
+    color-text-primary: #333,
+    // Default Font Size
+    default-font-size: 1.5rem,
+    // Main Colors
+    color-primary: #509af8,
+    // Global Colors
+    color-bg-1: #fff,
+    color-bg-2: hsl(0, 0%, 98%),
+    // Border
+    border: none,
+    //Box Shadow
+    box-shadow:
+      (
+        rgba(27, 31, 35, 0.04) 0px 1px 0px,
+        rgba(255, 255, 255, 0.25) 0px 1px 0px inset
+      ),
+  ),
+  dark: (
+    // Text Colors
+    color-text-primary: invert(#333, 100%),
+    // Default Font Size
+    default-font-size: 1.5rem,
+    // Main Colors
+    color-primary: #509af8,
+    // Background Colors
+    color-bg-1: #232323,
+    color-bg-2: #313131,
+    // Border
+    border: 1px solid rgba(255, 255, 255, 0.3),
+    //Box Shadow
+    box-shadow: none,
+  ),
+);
